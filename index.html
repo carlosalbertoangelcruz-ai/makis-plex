@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makis Plex - Sistema QR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy79kejrGdbaoAXk36tz98cajf3zBjKiRgkA&s" alt="Logo Makis Plex" class="logo">
+    </div>
+    <p class="subtitulo">UNIVERSIDAD PRIVADA DEL NORTE | </p>
+  </header>
+
+  <main>
+    <section id="modulo-mesa">
+      <h2>1. Identificación de la Mesa</h2>
+      <div class="form-group-mesa">
+        <label for="id_mesa">Número de Mesa:</label>
+        <input type="number" id="id_mesa" min="1" max="30" value="1">
+      </div>
+      <p id="mensaje-mesa" class="mensaje-exito">📍 Mesa 1 lista para ordenar.</p>
+    </section>
+
+    <hr>
+
+    <form id="formulario-carta">
+      
+      <section id="seccion-comida">
+        <h2>2. Selección de Comidas (Makis y Entradas)</h2>
+        <p class="instruccion">Marca la casilla del plato, elige la cantidad y mira su presentación:</p>
+        
+        <div class="grupo-productos">
+          
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1617470703128-26a0fc9af10f?w=400" alt="Edamames" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-1" value="1" class="chk-producto">
+              <label for="chk-1" class="label-producto">
+                <strong>Edamames al Vapor</strong> <br>
+                <span class="prod-precio">S/. 15.00</span>
+              </label>
+              <input type="number" id="cant-1" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?w=400" alt="Gyozas" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-2" value="2" class="chk-producto">
+              <label for="chk-2" class="label-producto">
+                <strong>Gyozas de Cerdo x5</strong> <br>
+                <span class="prod-precio">S/. 18.00</span>
+              </label>
+              <input type="number" id="cant-2" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400" alt="Ebi Furai" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-3" value="3" class="chk-producto">
+              <label for="chk-3" class="label-producto">
+                <strong>Ebi Furai x6</strong> <br>
+                <span class="prod-precio">S/. 24.00</span>
+              </label>
+              <input type="number" id="cant-3" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=400" alt="Acevichado" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-4" value="4" class="chk-producto">
+              <label for="chk-4" class="label-producto">
+                <strong>Acevichado Maki x10</strong> <br>
+                <span class="prod-precio">S/. 28.00</span>
+              </label>
+              <input type="number" id="cant-4" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=400" alt="Furai" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-5" value="5" class="chk-producto">
+              <label for="chk-5" class="label-producto">
+                <strong>Furai Maki x10</strong> <br>
+                <span class="prod-precio">S/. 26.00</span>
+              </label>
+              <input type="number" id="cant-5" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=400" alt="California" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-6" value="6" class="chk-producto">
+              <label for="chk-6" class="label-producto">
+                <strong>California Maki x10</strong> <br>
+                <span class="prod-precio">S/. 25.00</span>
+              </label>
+              <input type="number" id="cant-6" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=400" alt="Lomo Maki" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-7" value="7" class="chk-producto">
+              <label for="chk-7" class="label-producto">
+                <strong>Lomo Maki x10</strong> <br>
+                <span class="prod-precio">S/. 30.00</span>
+              </label>
+              <input type="number" id="cant-7" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1633478062482-790e3b5dd810?w=400" alt="Avocado" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-8" value="8" class="chk-producto">
+              <label for="chk-8" class="label-producto">
+                <strong>Avocado Maki x10</strong> <br>
+                <span class="prod-precio">S/. 27.00</span>
+              </label>
+              <input type="number" id="cant-8" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=400" alt="Inka" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-9" value="9" class="chk-producto">
+              <label for="chk-9" class="label-producto">
+                <strong>Inka Maki x10</strong> <br>
+                <span class="prod-precio">S/. 26.00</span>
+              </label>
+              <input type="number" id="cant-9" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1607301401219-43c47245758d?w=400" alt="Tari" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-10" value="10" class="chk-producto">
+              <label for="chk-10" class="label-producto">
+                <strong>Tarí Maki x10</strong> <br>
+                <span class="prod-precio">S/. 28.00</span>
+              </label>
+              <input type="number" id="cant-10" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400" alt="Yakimeshi" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-11" value="11" class="chk-producto">
+              <label for="chk-11" class="label-producto">
+                <strong>Yakimeshi Especial</strong> <br>
+                <span class="prod-precio">S/. 22.00</span>
+              </label>
+              <input type="number" id="cant-11" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400" alt="Yakisoba" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-12" value="12" class="chk-producto">
+              <label for="chk-12" class="label-producto">
+                <strong>Yakisoba de Pollo</strong> <br>
+                <span class="prod-precio">S/. 26.00</span>
+              </label>
+              <input type="number" id="cant-12" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Curry" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-13" value="13" class="chk-producto">
+              <label for="chk-13" class="label-producto">
+                <strong>Chicken Katsu Curry</strong> <br>
+                <span class="prod-precio">S/. 32.00</span>
+              </label>
+              <input type="number" id="cant-13" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="seccion-bebidas">
+        <h2>3. Selección de Bebidas</h2>
+        <div class="grupo-productos">
+          
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400" alt="Chicha" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-14" value="14" class="chk-producto">
+              <label for="chk-14" class="label-producto">
+                <strong>limonada (1L)</strong> <br>
+                <span class="prod-precio">S/. 12.00</span>
+              </label>
+              <input type="number" id="cant-14" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=400" alt="Gaseosa" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-15" value="15" class="chk-producto">
+              <label for="chk-15" class="label-producto">
+                <strong>Gaseosa Personal</strong> <br>
+                <span class="prod-precio">S/. 6.00</span>
+              </label>
+              <input type="number" id="cant-15" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="seccion-notas">
+        <h2>Notas Generales para la Cocina</h2>
+        <div class="form-group">
+          <label for="notas-cocina">Especificaciones (Ej: Sin palta, bebidas sin hielo):</label>
+          <textarea id="notas-cocina" rows="3" placeholder="Escribe aquí tus notas..."></textarea>
+        </div>
+        
+        <button type="submit" id="btn-submit-formulario" class="btn-generar">🧾 Calcular Cuenta y Generar Boleta</button>
+      </section>
+    </form>
+
+    <hr>
+
+    <section id="modulo-boleta">
+      <h2>4. Pre-cuenta y Comanda Emitida</h2>
+      
+      <div id="boleta-bloqueado" class="alerta-info">
+        Por favor, marca los platos y bebidas que deseas arriba y presiona "Calcular Cuenta".
+      </div>
+
+      <div id="contenedor-boleta" style="display: none;">
+        <div class="boleta-digital">
+          <div class="boleta-header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy79kejrGdbaoAXk36tz98cajf3zBjKiRgkA&s" alt="Logo Ticket" class="boleta-logo">
+            <h3>MAKIS PLEX SUSHI BAR</h3>
+            <p>MAKIS PLEX S.A.C — RUC: 20601234567</p>
+            <p>📍 Av. El Sol 123 - Trujillo</p>
+          </div>
+          
+          <div class="boleta-datos">
+            <p><strong>BOLETA ELECTRÓNICA:</strong> B001-<span id="boleta-numero">000000</span></p>
+            <p><strong>Mesa:</strong> N° <span id="boleta-mesa-num">1</span></p>
+            <p><strong>Fecha/Hora Emisión:</strong> <span id="boleta-fecha">--/--/----</span></p>
+          </div>
+          
+          <div class="boleta-separador">===================================</div>
+          
+          <div class="boleta-fila boleta-negrita">
+            <div class="col-cant">CANT</div>
+            <div class="col-desc">DESCRIPCIÓN</div>
+            <div class="col-subtotal">TOTAL</div>
+          </div>
+          
+          <div class="boleta-separador">-----------------------------------</div>
+          
+          <div id="boleta-items-lista"></div>
+          
+          <div id="boleta-nota-impresa" class="boleta-seccion-nota"></div>
+          
+          <div class="boleta-totales">
+            <p>OP. GRAVADA: <span class="monto-derecha">S/. <span id="boleta-subtotal">0.00</span></span></p>
+            <p>I.G.V. (18%): <span class="monto-derecha">S/. <span id="boleta-igv">0.00</span></span></p>
+            <div class="boleta-separador">-----------------------------------</div>
+            <h4 class="total-final">TOTAL COMPRA: <span class="monto-derecha">S/. <span id="boleta-total">0.00</span></span></h4>
+          </div>
+          
+          <div class="boleta-footer">
+            <p>¡Gracias por tu visita familiar a Makis Plex!</p>
+            <p>Desarrollado para la evaluación académica de la UPN.</p>
+          </div>
+        </div>
+
+        <div class="acciones-boleta">
+          <button type="button" id="btn-borrar-todo" class="btn-peligro">🗑️ Borrar Todo</button>
+          <button type="button" id="btn-enviar-cocina" class="btn-enviar">🚀 ENVIAR PEDIDO COMPLETO A COCINA</button>
+        </div>
+      </div>
+
+      <div id="mensaje-exito-final" class="panel-exito" style="display: none;">
+        🍣 ¡ORDEN ENVIADA EXITOSAMENTE! <br>
+        <small>La barra recibió el pedido de la Mesa <span id="mesa-exito-num">1</span>.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Proyecto de Aula Integrado por:</strong></p>
+    <p>Carlos Alberto Angel Cruz • Oskar Palacios Alzamora • Erikson Peña Rojas • Frank Sanchez Huancho • Pablo Manuel Ruiz Diaz</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
