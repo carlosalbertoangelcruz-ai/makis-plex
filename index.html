@@ -12,7 +12,7 @@
     <div class="logo-container">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy79kejrGdbaoAXk36tz98cajf3zBjKiRgkA&s" alt="Logo Makis Plex" class="logo">
     </div>
-    <p class="subtitulo">UNIVERSIDAD PRIVADA DEL NORTE | </p>
+    <p class="subtitulo">UNIVERSIDAD PRIVADA DEL NORTE | Sede Trujillo</p>
   </header>
 
   <main>
@@ -201,11 +201,11 @@
         <div class="grupo-productos">
           
           <div class="producto-card">
-            <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400" alt="Chicha" class="img-plato">
+            <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400" alt="Limonada" class="img-plato">
             <div class="producto-detalles">
               <input type="checkbox" id="chk-14" value="14" class="chk-producto">
               <label for="chk-14" class="label-producto">
-                <strong>limonada (1L)</strong> <br>
+                <strong>Limonada Tradicional (1L)</strong> <br>
                 <span class="prod-precio">S/. 12.00</span>
               </label>
               <input type="number" id="cant-14" min="1" max="20" value="1" class="input-cantidad">
@@ -224,6 +224,63 @@
             </div>
           </div>
 
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400" alt="Chicha Morada" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-16" value="16" class="chk-producto">
+              <label for="chk-16" class="label-producto">
+                <strong>Chicha Morada  (1L)</strong> <br>
+                <span class="prod-precio">S/. 14.00</span>
+              </label>
+              <input type="number" id="cant-16" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?w=400" alt="Combinado Maracuyá" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-17" value="17" class="chk-producto">
+              <label for="chk-17" class="label-producto">
+                <strong>Jugo Combinado de Maracuyá (1L)</strong> <br>
+                <span class="prod-precio">S/. 15.00</span>
+              </label>
+              <input type="number" id="cant-17" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+          <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1531315630201-bb15abeb1653?w=400" alt="Te Verde" class="img-plato">
+            <div class="producto-detalles">
+              <input type="checkbox" id="chk-18" value="18" class="chk-producto">
+              <label for="chk-18" class="label-producto">
+                <strong>Té Verde Japonés Frío</strong> <br>
+                <span class="prod-precio">S/. 8.00</span>
+              </label>
+              <input type="number" id="cant-18" min="1" max="20" value="1" class="input-cantidad">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="seccion-pago">
+        <h2>4. Método de Pago</h2>
+        <p class="instruccion">Selecciona cómo deseas pagar tu cuenta electrónica:</p>
+        <div class="grupo-metodos-pago">
+          <div class="pago-option">
+            <input type="radio" id="pago-yape" name="metodo_pago" value="YAPE / PLIN" checked>
+            <label for="pago-yape">📱 Yape / Plin</label>
+          </div>
+          <div class="pago-option">
+            <input type="radio" id="pago-efectivo" name="metodo_pago" value="EFECTIVO">
+            <label for="pago-efectivo">💵 Efectivo</label>
+          </div>
+          <div class="pago-option">
+            <input type="radio" id="pago-tarjeta" name="metodo_pago" value="TARJETA DÉBITO/CRÉDITO">
+            <label for="pago-tarjeta">💳 Tarjeta Bancaria</label>
+          </div>
         </div>
       </section>
 
@@ -243,7 +300,7 @@
     <hr>
 
     <section id="modulo-boleta">
-      <h2>4. Pre-cuenta y Comanda Emitida</h2>
+      <h2>5. Pre-cuenta y Comanda Emitida</h2>
       
       <div id="boleta-bloqueado" class="alerta-info">
         Por favor, marca los platos y bebidas que deseas arriba y presiona "Calcular Cuenta".
@@ -255,13 +312,14 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy79kejrGdbaoAXk36tz98cajf3zBjKiRgkA&s" alt="Logo Ticket" class="boleta-logo">
             <h3>MAKIS PLEX SUSHI BAR</h3>
             <p>MAKIS PLEX S.A.C — RUC: 20601234567</p>
-            <p>📍 Av. El Sol 123 - Trujillo</p>
+            <p>📍 Sede San Isidro / El Cortijo: El Cortijo, Mz. A, Lote 6 (Esquina con la UPN)</p>
           </div>
           
           <div class="boleta-datos">
             <p><strong>BOLETA ELECTRÓNICA:</strong> B001-<span id="boleta-numero">000000</span></p>
             <p><strong>Mesa:</strong> N° <span id="boleta-mesa-num">1</span></p>
             <p><strong>Fecha/Hora Emisión:</strong> <span id="boleta-fecha">--/--/----</span></p>
+            <p><strong>Método de Pago:</strong> <span id="boleta-pago-metodo" style="font-weight: bold; color: #b81d18;">--</span></p>
           </div>
           
           <div class="boleta-separador">===================================</div>
@@ -286,8 +344,8 @@
           </div>
           
           <div class="boleta-footer">
-            <p>¡Gracias por tu visita familiar a Makis Plex!</p>
-            <p>Desarrollado para la evaluación académica de la UPN.</p>
+            <p>¡Gracias por tu visitar a Makis Plex!</p>
+            <p>Desarrollado por Carlos Angel.</p>
           </div>
         </div>
 
@@ -299,7 +357,7 @@
 
       <div id="mensaje-exito-final" class="panel-exito" style="display: none;">
         🍣 ¡ORDEN ENVIADA EXITOSAMENTE! <br>
-        <small>La barra recibió el pedido de la Mesa <span id="mesa-exito-num">1</span>.</small>
+        <small>La cosina recibió el pedido de la Mesa <span id="mesa-exito-num">1</span>.</small>
       </div>
     </section>
   </main>
